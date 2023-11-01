@@ -1,0 +1,25 @@
+{
+  "name": "muebles",
+  "version": "1.0.0",
+  "description": "procesador de scss para la pagina de muebles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/rey.scss css/muebles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franquitoo/muebles.git"
+  },
+  "author": "Franco Ferreyra Bonnin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franquitoo/muebles/issues"
+  },
+  "homepage": "https://github.com/franquitoo/muebles#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
