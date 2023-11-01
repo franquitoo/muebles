@@ -20,13 +20,32 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   align-items: center;
   padding: 1rem;
   background-image: linear-gradient(to right, #d89670, #a53b0a); }
+  .header1logo {
+    height: 12rem;
+    width: 12rem; }
   .headericon {
-    color: black; }
-  .header2ul {
-    list-style-type: none;
+    margin-right: 0.5rem; }
+  .header2h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+    transition: all 1s; }
+    .header2h1:hover {
+      transform: scale(1.2, 1.2); }
+  .header3button {
+    color: black;
+    background-color: white;
+    font-size: 2rem;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; }
+  .header3li {
     display: flex;
-    gap: 1rem; }
-    .header2ulli {
-      display: flex;
-      font-size: 1.5rem;
-      gap: 0.7rem; }
+    font-size: 1.5rem;
+    gap: 0.7rem; }
+  .headeranchor {
+    transition: all 1s;
+    color: black;
+    text-decoration: none; }
+  .headeranchor:hover {
+    transform: scale(1.5, 1.5);
+    color: white; }
