@@ -22,17 +22,89 @@
         <div class="header2">
             <h1 class="header2h1">MUEBLERIA WELD</h1>
         </div>
-        <div class="dropdown header3">
+        <div class="header3 dropdown">
             <button class="btn btn-secondary dropdown-toggle header3button" type="button" data-bs-toggle="dropdown" aria-expanded="false">Subpáginas</button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item header3li" href="#">Action</a></li>
-              <li><a class="dropdown-item header3li" href="#">Another action</a></li>
-              <li><a class="dropdown-item header3li" href="#">Something else here</a></li>
+              <li><a class="header3a dropdown-item" href="#">Ofertas</a></li>
+              <li><a class="header3a dropdown-item" href="#">Contacto</a></li>
+              <li><a class="header3a dropdown-item" href="#">Historia</a></li>
             </ul>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="main">
+        <div class="principal">
+          <div>
+            <h2 class="principalh2">Empresa dedicada al diseño  y fabricación de muebles y objetos de decoración en hierro y madera.</h2>
+          </div>
+          <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" id="principalbutton" class="active principalbutton" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" id="principalbutton" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" id="principalbutton" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./imagenes/mesablaca.jpg" class="d-block w-100 principalimg1" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="principalh5">First slide label</h5>
+                      <p class="principalp">Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/mesanegra.jpg" class="d-block w-100 principalimg1" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="principalh5">Second slide label</h5>
+                      <p class="principalp">Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span id="principalbutton2" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span id="principalbutton2" class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+          </div>
+        </div>
+        <div class="aside">
+          <div>
+            <h4 class="asideh4">Productos en oferta:</h4>
+          </div>
+          <div class="asidediv">
+            <div class="asidedivcont">
+              <img class="asideimg" src="./imagenes/estantemultiple.jpg" alt="imagen">
+              <h5 class="asideh5">25% off</h5>
+            </div>
+            <div class="asidedivcont">
+              <img class="asideimg" src="./imagenes/estanteconcajones.jpeg" alt="imagen">
+              <h5 class="asideh5">30% off</h5>
+            </div>
+            <div class="asidedivcont">
+              <img class="asideimg" src="./imagenes/tripleestante.jpeg" alt="imagen">
+              <h5 class="asideh5">15% off</h5>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer class="footer">
+      <div class="footercont1">
+        <p class="footercont1p">En esta empresa dedicada a lo mencionado en el main, le brindamos profesionalismo, dedicacion y compromiso. Eso es lo que nos ha destacado estos 8 años que llevamos en el mercado.</p>
+      </div>
+      <div class="footercont2">
+          <ul class="footerul">
+            <li class="footerulli"><i class="fa-solid fa-location-dot footerullii"></i>Concepcion del uruguay</li>
+            <li class="footerulli"><i class="fa-solid fa-phone footerullii"></i>3442 567311</li>
+            <li class="footerulli"><i class="fa-solid fa-map footerullii"></i>Juan jose bruno 2816</li>
+          </ul>
+          <div>
+            <i class="fa-brands fa-instagram footericon"></i>
+            <i class="fa-solid fa-envelope footericon"></i>
+            <i class="fa-brands fa-whatsapp footericon"></i>
+          </div> 
+      </div>
+    </footer>
     
 </body>
 </html>

@@ -1,0 +1,133 @@
+.main{
+    display: grid;
+    grid-template-columns:75% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: "principal aside";
+}
+
+.aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(216, 135, 97));
+
+    &h4{
+        padding: 1rem;
+    }
+
+    &div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        &cont{
+            transition: all 0.8s;
+  
+        &:hover{
+            transform: scale(1.1,1.1);
+            color: green;
+        }
+
+        }
+    }
+
+    &img{
+        width: 12rem;
+        height: 12rem;
+    }
+
+    &h5{
+        text-align: center;
+        padding: 0.2rem;
+    }
+}
+
+.principal{
+    grid-area:principal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/imagenes/backgroundmain.jpeg);
+    background-size: 100% 100%;
+
+    &h2{
+        text-align: center;
+        padding: 1rem;
+        color: white;
+    }
+
+    &h5{
+        color: black;
+    }
+
+    &p{
+        color: black;
+    }
+
+    &img1{
+        height: 40rem;
+    }
+
+}
+
+#principalbutton{
+    background-color: black;
+
+    &2{
+       background-color: black;
+    }
+}
+
+#carouselExampleCaptions{
+    width: 35rem;
+    border: black solid 1px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    color: white;
+    background-image: linear-gradient(to right,rgb(175, 174, 174),rgb(70, 69, 69));
+
+    &cont1{
+        width: 35rem;
+
+        &p{
+            font-size: 1.3rem;
+        }
+    }
+
+    &cont2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &ul{
+        list-style-type: none;
+
+        &li{
+            display: flex;
+            gap: 0.5rem;
+            font-size: 1.3rem;
+
+            &i{
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    &icon{
+        font-size: 2rem;
+        padding: 0.5rem;
+        transition: all 1s;
+
+        &:hover{
+            transform: scale(1.1,1.1);
+            color: rgb(212, 110, 15);
+        }
+    }
+}
