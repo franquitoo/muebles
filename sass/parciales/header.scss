@@ -3,7 +3,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
-    background-image: linear-gradient(to top,rgb(255, 255, 255),rgb(202, 108, 65));
+    background-image: linear-gradient(to top,rgb(255, 255, 255),rgb(161, 160, 159));
 
     &1logo{
         height: 12rem;
@@ -16,12 +16,12 @@
 
     &2{
         &h1{
-            font-size: 3rem;
+            font-size: 3.5rem;
             text-decoration: underline;
             transition: all 1s;
 
         &:hover{
-            transform: scale(1.2,1.2);
+            transform: scale(1.1,1.1);
         }
 
         }
@@ -29,37 +29,38 @@
     } 
 
     &3{
-        transition: all 0.8s;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+
+        &div{
+            display: flex;
+            gap: 1rem;
+        }
+
+        i{transition: all, 0.5s;
 
         &:hover{
-            transform: scale(1.2,1.2);
+            transform: scale(1.1,1.1);
         }
 
-        &button{
-            color: black;
+        }
+
+        &sub{
+            font-size: 1.8rem;
+            text-decoration: underline;
             background-color: white;
-            font-size: 2rem;
-            font-family: 'Cabin', sans-serif;
-            font-family: 'Nunito Sans', sans-serif;
-            font-family: 'Poppins', sans-serif;
-            transition: all 0.8s;
+            padding: 1rem;
+            border: black 1px solid;
+            border-radius: 1rem;
+            transition:all, 0.8s;
 
             &:hover{
-                background-color: rgb(216, 135, 97);
-                border: 2px solid white;
+                transform: scale(1.1,1.2);
+                background-image: linear-gradient(to right,white,grey);
             }
         }
-
-        &a{
-            font-size: 1.3rem;
-            transition: all 0.6s;
-
-            &:hover{
-                background-color: rgb(184, 87, 22);
-                color: white;
-            }
-        }
-
+      
     }
 
 }

@@ -1,0 +1,94 @@
+.contacto{
+
+    &div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+        background-image: linear-gradient(to right,rgba(92, 92, 94, 0.671), rgba(68, 62, 62, 0.616)),url(/imagenes/mesanegra3.jpg);
+
+
+        &2{  
+            background-image: linear-gradient(to right,rgba(92, 92, 94, 0.671), rgba(68, 62, 62, 0.616)),url(/imagenes/ambasmesas.jpg);
+            background-size: 100% 100%;
+            color: white;
+        }
+    }
+
+    &p{
+        padding: 1rem;
+    }
+
+    &h2{
+        padding: 0.5rem;
+
+        &end{
+            text-align: end;
+        }
+    }
+
+    &info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+
+        &div{
+            display: flex;
+        }
+
+        &i{
+            font-size: 2rem;
+        }
+
+        &h4{
+            padding: 0.5rem;
+        }
+    }
+
+}
+
+
+.form{
+
+    border: rgb(255, 255, 255) 1px solid;
+    border-radius: 2rem;
+    background-size: 100% 100%;
+    padding: 1rem;
+
+    &div{
+        display: flex;
+        gap: 2rem;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    &label{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    &input{
+        background-image: linear-gradient(to right, white ,rgb(100, 102, 100));
+        border: white 1px solid;
+        border-radius: 1rem;
+    }
+
+    &send{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+
+        &butt{
+            padding: 0.6rem;
+            background-image: linear-gradient(to right,rgb(92, 94, 92), white);
+            color: white;
+            border-radius: 1rem;
+            border: white solid 1px;
+            font-size: 1.5rem;
+        }
+    }
+}

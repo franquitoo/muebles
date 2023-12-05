@@ -9,134 +9,195 @@
 .px {
   font-size: 16px; }
 
-h1, h2, h3, h4, h5, h6, p, a, li {
+h1, h2, h3, h4, h5, h6, p, a, li, label, input, label {
   font-family: 'Cabin', sans-serif;
   font-family: 'Nunito Sans', sans-serif;
   font-family: 'Poppins', sans-serif; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+i {
+  font-size: 2.5rem; }
 
 .header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
-  background-image: linear-gradient(to top, white, #ca6c41); }
+  background-image: linear-gradient(to top, white, #a1a09f); }
   .header1logo {
     height: 12rem;
     width: 12rem; }
   .headericon {
     margin-right: 0.5rem; }
   .header2h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-decoration: underline;
     transition: all 1s; }
     .header2h1:hover {
-      transform: scale(1.2, 1.2); }
+      transform: scale(1.1, 1.1); }
   .header3 {
-    transition: all 0.8s; }
-    .header3:hover {
-      transform: scale(1.2, 1.2); }
-    .header3button {
-      color: black;
+    display: flex;
+    align-items: center;
+    gap: 4rem; }
+    .header3div {
+      display: flex;
+      gap: 1rem; }
+    .header3 i {
+      transition: all, 0.5s; }
+      .header3 i:hover {
+        transform: scale(1.1, 1.1); }
+    .header3sub {
+      font-size: 1.8rem;
+      text-decoration: underline;
       background-color: white;
-      font-size: 2rem;
-      font-family: 'Cabin', sans-serif;
-      font-family: 'Nunito Sans', sans-serif;
-      font-family: 'Poppins', sans-serif;
-      transition: all 0.8s; }
-      .header3button:hover {
-        background-color: #d88761;
-        border: 2px solid white; }
-    .header3a {
-      font-size: 1.3rem;
-      transition: all 0.6s; }
-      .header3a:hover {
-        background-color: #b85716;
-        color: white; }
+      padding: 1rem;
+      border: black 1px solid;
+      border-radius: 1rem;
+      transition: all, 0.8s; }
+      .header3sub:hover {
+        transform: scale(1.1, 1.2);
+        background-image: linear-gradient(to right, white, grey); }
 
-.main {
-  display: grid;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: 100%;
-  grid-template-areas: "principal aside"; }
+.mainsection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5rem;
+  padding: 10rem;
+  background-image: linear-gradient(to right, rgba(178, 179, 182, 0.671), rgba(68, 62, 62, 0.616)), url(/imagenes/ambasmesas.jpg);
+  background-size: 100% 100%; }
 
-.aside {
-  grid-area: aside;
+.maindiv {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-image: linear-gradient(to right, white, #d88761); }
-  .asideh4 {
-    padding: 1rem; }
+  gap: 10rem; }
+
+.mainh3 {
+  color: white;
+  background-color: black;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  font-size: 2.5rem; }
+  .mainh32, .mainh31 {
+    text-align: center; }
+
+.mainimg {
+  height: 35rem; }
+
+#carouselExampleCaptions {
+  width: 30rem;
+  border: 1px solid black; }
+
+.carouseltext {
+  color: black; }
+
+.aside {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin: 1rem; }
   .asidediv {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 3rem; }
-    .asidedivcont {
-      transition: all 0.8s; }
-      .asidedivcont:hover {
-        transform: scale(1.1, 1.1);
-        color: green; }
-  .asideimg {
-    width: 12rem;
-    height: 12rem; }
-  .asideh5 {
-    text-align: center;
-    padding: 0.2rem; }
+    gap: 2.5rem;
+    padding: 3rem; }
+    .asidediv12 {
+      border-right: 1px black solid; }
+  .asidei {
+    font-size: 4rem;
+    transition: all 1s; }
+    .asidei:hover {
+      transform: scale(1.5, 1.5); }
+  .asideh4 {
+    text-align: center; }
 
-.principal {
-  grid-area: principal;
+.muestras {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-image: linear-gradient(to right, rgba(178, 179, 182, 0.671), rgba(68, 62, 62, 0.616)), url(/imagenes/mesanegra3.jpg);
+  background-size: 100% 100%; }
+  .muestrasimg {
+    height: 30rem; }
+  .muestrash3 {
+    text-align: center;
+    background-color: white;
+    margin: 1rem;
+    padding: 0.1rem;
+    border-radius: 2rem;
+    transition: all 1s; }
+    .muestrash3:hover {
+      color: white;
+      background-color: green; }
+
+#carouselExampleFade, #carouselExampleFade2 {
+  max-width: 40rem; }
+
+.contactodiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background-image: linear-gradient(to right, rgba(92, 92, 94, 0.671), rgba(68, 62, 62, 0.616)), url(/imagenes/mesanegra3.jpg); }
+  .contactodiv2 {
+    background-image: linear-gradient(to right, rgba(92, 92, 94, 0.671), rgba(68, 62, 62, 0.616)), url(/imagenes/ambasmesas.jpg);
+    background-size: 100% 100%;
+    color: white; }
+
+.contactop {
+  padding: 1rem; }
+
+.contactoh2 {
+  padding: 0.5rem; }
+  .contactoh2end {
+    text-align: end; }
+
+.contactoinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/imagenes/backgroundmain.jpeg);
-  background-size: 100% 100%; }
-  .principalh2 {
-    text-align: center;
-    padding: 1rem;
-    color: white; }
-  .principalh5 {
-    color: black; }
-  .principalp {
-    color: black; }
-  .principalimg1 {
-    height: 40rem; }
+  color: white; }
+  .contactoinfodiv {
+    display: flex; }
+  .contactoinfoi {
+    font-size: 2rem; }
+  .contactoinfoh4 {
+    padding: 0.5rem; }
 
-#principalbutton {
-  background-color: black; }
-  #principalbutton2 {
-    background-color: black; }
-
-#carouselExampleCaptions {
-  width: 35rem;
-  border: black solid 1px; }
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-  color: white;
-  background-image: linear-gradient(to right, #afaeae, #464545); }
-  .footercont1 {
-    width: 35rem; }
-    .footercont1p {
-      font-size: 1.3rem; }
-  .footercont2 {
+.form {
+  border: white 1px solid;
+  border-radius: 2rem;
+  background-size: 100% 100%;
+  padding: 1rem; }
+  .formdiv {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding: 1rem; }
+  .formlabel {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-  .footerul {
-    list-style-type: none; }
-    .footerulli {
-      display: flex;
-      gap: 0.5rem;
-      font-size: 1.3rem; }
-      .footerullii {
-        margin-top: 0.2rem; }
-  .footericon {
-    font-size: 2rem;
-    padding: 0.5rem;
-    transition: all 1s; }
-    .footericon:hover {
-      transform: scale(1.1, 1.1);
-      color: #d46e0f; }
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem; }
+  .forminput {
+    background-image: linear-gradient(to right, white, #646664);
+    border: white 1px solid;
+    border-radius: 1rem; }
+  .formsend {
+    display: flex;
+    justify-content: center;
+    padding: 1rem; }
+    .formsendbutt {
+      padding: 0.6rem;
+      background-image: linear-gradient(to right, #5c5e5c, white);
+      color: white;
+      border-radius: 1rem;
+      border: white solid 1px;
+      font-size: 1.5rem; }
